@@ -9,10 +9,9 @@ public class Main {
         HeroFactory army = new HeroFactory();
         Hero knight = army.createHero(HeroType.KNIGHT);
         Hero archer = army.createHero(ARCHER);
-        Store store  = Store.getInstance();
 
         knight.buyEquipment(EquipmentType.SWORD);
-        store.orderEquipment(HeroType.KNIGHT,EquipmentType.SWORD);
+        archer.buyEquipment(EquipmentType.BOW);
 
         knight.doAction(1, DWARF);
     }
