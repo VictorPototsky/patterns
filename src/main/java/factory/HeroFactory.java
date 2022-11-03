@@ -9,8 +9,6 @@ public class HeroFactory {
             case ARCHER -> new Archer();
             default -> null;
         };
-
-
         return hero;
     }
 
