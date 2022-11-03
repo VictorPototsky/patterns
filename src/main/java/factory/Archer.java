@@ -12,6 +12,6 @@ public class Archer implements Hero{
 
     @Override
     public void buyEquipment(EquipmentType type) {
-
+        System.out.println("Лучник покупает " + type);
     }
 }
