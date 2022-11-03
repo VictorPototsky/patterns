@@ -25,6 +25,8 @@ public class Knight implements Hero{
     @Override
     public void buyEquipment(EquipmentType type) {
         System.out.println("Рыцарь покупает " + type);
+        Store store  = Store.getInstance();
+        store.orderEquipment(HeroType.KNIGHT,EquipmentType.SWORD);
 
     }
 }
